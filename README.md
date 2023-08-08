@@ -13,7 +13,7 @@ This is a simple application that uses the Django Rest Framework and JavaScript 
 
 ## Description
 
-The Django To-Do App is a web-based task management application that allows users to create, edit, and delete tasks. The frontend is built using HTML, CSS (styled with Bootstrap), and JavaScript. The backend is powered by Django, a Python web framework. The app utilizes AJAX to provide a seamless user experience by dynamically updating the task list without requiring a full page refresh.
+The Django To-Do App is a web-based task management application that allows users to create, edit, and delete tasks. The frontend is built using JavaScript, HTML,and CSS (styled with Bootstrap). The backend is powered by Django and Django REST Framework, Python web frameworks. The app utilizes AJAX with the Fetch API to provide a seamless user experience by dynamically updating the task list without requiring a full page refresh.
 
 ## Features
 
