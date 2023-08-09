@@ -52,14 +52,19 @@ The Django To-Do App is a web-based task management application that allows user
    
 ## Usage
 
-1. Run the development server:
+1. Create superuser with your email account as your username (even if it's a fake email address)
+   ```bash
+   python manage.py createsuperuser
+   ```
+
+2. Run the development server:
    ```bash
    python manage.py runserver
    ```
 
-2. Open your web browser and go to `http://127.0.0.1:8000` to access the To-Do app.
+3. Open your web browser and go to `http://127.0.0.1:8000` to access the To-Do app.
 
-3. Use the interface to add, edit, complete, and delete tasks. The app will use AJAX to update the task list dynamically.
+4. Use the interface to add, edit, complete, and delete tasks. The app will use AJAX to update the task list dynamically.
 
 ## Contributing
 Contributions are welcome! If you find any bugs or have suggestions for improvements, feel free to open an issue or submit a pull request.
