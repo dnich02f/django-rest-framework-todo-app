@@ -14,7 +14,7 @@ def my_list(request):
     return render(request, 'ajax_frontend/list.html')
 
 
-def login(request):
+def user_login(request):
     if request.method == "POST":
         username = request.POST.get("login")
         password = request.POST.get("password")
@@ -22,7 +22,7 @@ def login(request):
         if user is not None:
             auth_login(request, user)
             if request.GET.get('next', False):
-                print(request.GET)
+                print("GET: ", request.GET)
                 return redirect(request.GET['next'])
             else:
                 return redirect('ajax_frontend:my_list')
@@ -31,6 +31,6 @@ def login(request):
     return render(request, 'ajax_frontend/login.html', {})
 
 
-def logout(request):
+def user_logout(request):
     auth_logout(request)
     return redirect('ajax_frontend:login')
