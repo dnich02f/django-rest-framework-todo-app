@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(90deg, rgba(54, 217, 182, 1) 0%, rgba(32, 152, 126, 1) 43%, rgba(0, 212, 255, 1) 100%);
+  background: linear-gradient(90deg, cornflowerblue 0%, darkseagreen 50%, darksalmon 100%);
 }
 
 h1, h2, h3, h4, h5, p, span, strike {
@@ -8,11 +8,9 @@ h1, h2, h3, h4, h5, p, span, strike {
 
 #task-container {
   max-width: 600px;
-  margin: 0 auto;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  box-shadow: lightgray;
   background-color: #fff;
   margin: 100px auto;
-
   justify-content: space-around;
   align-items: flex-start;
 }
@@ -22,12 +20,12 @@ h1, h2, h3, h4, h5, p, span, strike {
   top: 0;
   border-bottom: 1px solid #e9e9e9;
   background-color: #fff;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.20);
   padding: 40px;
 }
 
 #submit {
-  background-color: #36d9b6;
+  background-color: cornflowerblue;
   border-radius: 0;
   border: 0;
   color: #fff;

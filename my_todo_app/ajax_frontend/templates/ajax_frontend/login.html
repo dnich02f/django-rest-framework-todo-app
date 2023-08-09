@@ -1,0 +1,29 @@
+{%  extends 'ajax_frontend/layout.html' %}
+{% load static %}
+
+{% block stylesheets %}
+{% endblock stylesheets %}
+
+{% block content %}
+    <form class="form-signin" method="post" style="width: 50vw; margin: auto;">
+        <div class="text-center mb-4">
+            <h1 class="h3 mb-3 font-weight-normal">Login</h1>
+            <p>Enter your email and password to login</p>
+        </div>
+        <h1 class="h3 mb-3 font-weight-normal">{{title}}</h1>
+
+        {% csrf_token %}
+        <label for="login" class="sr-only">Email address</label>
+        <input type="email" name="login" id="login" class="form-control" placeholder="Email address" required autofocus>
+        <br />
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="password" name="password" class="form-control" placeholder="Password" >
+        <br />
+        <div class="checkbox mb-3">
+            <label>
+                <input type="checkbox" value="remember-me"> Remember me
+            </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block simmons-buttons" id="login-submit" type="submit">Sign in</button>
+    </form>
+{% endblock %}

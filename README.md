@@ -19,11 +19,11 @@ The Django To-Do App is a web-based task management application that allows user
 
 - Create new tasks with a title.
 - Edit existing tasks.
-- Mark tasks as completed or incomplete.
+- Mark tasks as completed or incomplete with a strike-through.
 - Delete tasks.
 - Stylish and responsive interface.
 - Utilizes Django's CSRF protection for security.
-- Fetches task data using AJAX for real-time updates.
+- Fetches task data using AJAX to the api endpoint for real-time updates.
 
 ## Installation
 
@@ -38,7 +38,7 @@ The Django To-Do App is a web-based task management application that allows user
     ```
 3. Create and activate a virtual environment (optional but recommended):
    ```bash
-    python3 -m venv venv
+   python3 -m venv venv
    source venv/bin/activate
     ```
 4. Install the project dependencies using pip:
@@ -53,9 +53,9 @@ The Django To-Do App is a web-based task management application that allows user
 ## Usage
 
 1. Run the development server:
-```bash
-python manage.py runserver
-```
+   ```bash
+   python manage.py runserver
+   ```
 
 2. Open your web browser and go to `http://127.0.0.1:8000` to access the To-Do app.
 
